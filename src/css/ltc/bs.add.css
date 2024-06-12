@@ -134,7 +134,9 @@ body {
     background-image: linear-gradient(to bottom, rgb(var(--bh-sand-rgb)), rgb(var(--bh-primary-rgb)));
 }
 
-body,
+body {
+    font-family: gotham narrow, sans-serif;
+}
 h2,
 h3,
 h4,
