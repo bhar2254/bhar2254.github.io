@@ -27,6 +27,13 @@
     --bs-modal-bg: var(--bh-light-gray);
 }
 
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgb(var(--bh-sand-rgb)), rgb(var(--bh-primary-rgb)));
+    font-family: 'Gotham Narrow', sans-serif;
+}
+
 hr {
     color: var(--bh-line);
 }
