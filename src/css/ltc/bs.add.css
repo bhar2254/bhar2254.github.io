@@ -474,9 +474,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, rgb(var(--bh-sand-rgb)), rgb(var(--bh-primary-rgb)));
+    font-family: gotham narrow, sans-serif;
 }
 
-body,
 h2,
 h3,
 h4,
