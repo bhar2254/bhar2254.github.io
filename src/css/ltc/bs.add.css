@@ -120,38 +120,6 @@ textarea {
     position: absolute;
 }
 
-a {
-    --bs-link-color-rgb: var(--bh-primary-rgb);
-}
-
-a:hover {
-    --bs-link-color-rgb: var(--bh-secondary-rgb);
-}
-
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(to bottom, rgb(var(--bh-sand-rgb)), rgb(var(--bh-primary-rgb)));
-}
-
-body {
-    font-family: gotham narrow, sans-serif;
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: gotham narrow, sans-serif;
-    font-weight: 300;
-}
-
-th,
-h1 {
-    font-family: gotham narrow, sans-serif;
-    font-weight: 350;
-}
-
 .sticky-header {
     position: fixed;
     top: 0;
