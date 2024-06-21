@@ -3145,7 +3145,6 @@ img.card.damaged-card {
 
 .card-profile {
     padding: 15px 2.5%;
-    background-color: #F5F6FA;
     border-bottom: 1px dashed #CDCDCD;
     -webkit-perspective: 2000px;
     perspective: 2000px
