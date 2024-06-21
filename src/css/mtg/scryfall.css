@@ -3144,15 +3144,12 @@ img.card.damaged-card {
 }
 
 .card-profile {
-    padding: 15px 2.5%;
-    border-bottom: 1px dashed #CDCDCD;
     -webkit-perspective: 2000px;
     perspective: 2000px
 }
 
 @media screen and (min-width: 980px) {
     .card-profile {
-        padding:20px 2.5% 64px 2.5%;
         -webkit-perspective: 1000px;
         perspective: 1000px
     }
@@ -3215,7 +3212,7 @@ img.card.damaged-card {
 @media screen and (min-width: 350px) {
     .card-image {
         padding-bottom:0;
-        height: 468px;
+        max-height: 20rem;
         width: 336px
     }
 }
