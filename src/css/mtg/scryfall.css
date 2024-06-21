@@ -3475,41 +3475,6 @@ img.card.damaged-card {
     }
 }
 
-.card-text {
-    display: block;
-    border: 1px solid rgba(0,0,0,0.25);
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    background: #fff;
-    margin: 15px auto 0 auto;
-    max-width: 500px;
-    padding: 0 0 15px 0;
-    font-size: 16px;
-    color: #16161D;
-    width: 100%
-}
-
-@media screen and (min-width: 720px) {
-    .card-text {
-        margin:15px 15px 0 0;
-        -webkit-box-flex: 1;
-        -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-        width: auto
-    }
-}
-
-@media screen and (min-width: 980px) {
-    .card-text {
-        width:36.5%;
-        margin: 20px 0 -25px -15px;
-        z-index: 1
-    }
-}
-
 .card-text-title {
     font-weight: bold;
     padding: 8px 12px 8px 12px;
@@ -11535,27 +11500,6 @@ select.form-n-input optgroup {
     width: 100%;
     max-width: 990px;
     margin: 0 auto
-}
-
-.text-grid .card-text {
-    -webkit-box-flex: 0;
-    -webkit-flex: none;
-    -ms-flex: none;
-    flex: none;
-    width: 100%;
-    margin: 0 0 1% 0
-}
-
-@media screen and (min-width: 450px) {
-    .text-grid .card-text {
-        width:49%
-    }
-}
-
-@media screen and (min-width: 760px) {
-    .text-grid .card-text {
-        width:32.5%
-    }
 }
 
 .toolbox {
