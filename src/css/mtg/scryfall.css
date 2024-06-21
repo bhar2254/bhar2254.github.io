@@ -3199,7 +3199,8 @@ img.card.damaged-card {
     padding-bottom: 139%;
     position: relative;
     z-index: 10000;
-    height: 400px;
+    min-height: 15rem;
+    max-height: 20rem;
     width: 300px
 }
 
@@ -3212,7 +3213,8 @@ img.card.damaged-card {
 @media screen and (min-width: 350px) {
     .card-image {
         padding-bottom:0;
-        max-height: 20rem;
+        max-height: 15rem;
+        min-height: 10rem;
         width: 336px
     }
 }
