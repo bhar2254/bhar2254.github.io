@@ -1,0 +1,11 @@
+.f1-team-primary,
+.f1-team-primary:hover {
+    color: #fff !important;
+    background-color: rgb(var(--f1-team-primary-rgb)) !important;
+}
+
+.f1-team-secondary,
+.f1-team-hover-secondary:hover {
+    color: #333 !important;
+    background-color: rgb(var(--f1-team-secondary-rgb)) !important;
+}
