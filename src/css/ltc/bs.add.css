@@ -4,8 +4,8 @@
     --bh-primary-filter: invert(22%) sepia(16%) saturate(3004%) hue-rotate(300deg) brightness(91%) contrast(88%);
     --bh-secondary: #FFA400;
     --bh-secondary-filter: invert(56%) sepia(98%) saturate(911%) hue-rotate(359deg) brightness(103%) contrast(106%);
-    --bh-dark-grey: #776E64;
-    --bh-dark-grey-filter: invert(44%) sepia(2%) saturate(2281%) hue-rotate(351deg) brightness(97%) contrast(88%);
+    --bh-dark-grey: #212529;
+    --bh-dark-grey-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(100%) contrast(100%) sepia(0%);
     --bh-light-grey: #f1f1f1;
     --bh-light-grey-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
     --bh-dark-gray: #776E64;
@@ -17,14 +17,12 @@
     --bh-secondary-rgb: 255,164,0;
     --bh-dark-grey-rgb: 119,110,100;
     --bh-light-grey-rgb: 241,241,241;
-    --bh-dark-gray-rgb: 119,110,100;
+    --bh-dark-gray-rgb: 33,37,41
     --bh-light-gray-rgb: 241,241,241;
     --bh-sand-rgb: 253,254,230;
     --bs-primary-rgb: var(--bh-primary-rgb);
     --bs-secondary-rgb: var(--bh-secondary-rgb);
     --bs-emphasis-color-rgb: var(--bs-secondary-rgb);
-    --bs-body-bg: var(--bh-light-gray);
-    --bs-modal-bg: var(--bh-light-gray);
 }
 
 body {
