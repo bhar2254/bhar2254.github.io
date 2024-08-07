@@ -8,8 +8,8 @@
     --bh-dark-grey-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(100%) contrast(100%) sepia(0%);
     --bh-light-grey: #f1f1f1;
     --bh-light-grey-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
-    --bh-dark-gray: #776E64;
-    --bh-dark-gray-filter: invert(44%) sepia(2%) saturate(2281%) hue-rotate(351deg) brightness(97%) contrast(88%);
+    --bh-dark-gray: #212529;
+    --bh-dark-gray-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(100%) contrast(100%) sepia(0%);
     --bh-light-gray: #f1f1f1;
     --bh-light-gray-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
     --bh-sand: #FDF5E6;
