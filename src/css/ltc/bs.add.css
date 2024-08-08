@@ -170,11 +170,23 @@ textarea {
 }
 
 .bh-left-bar-primary {
-    border-left: 6px solid var(--bs-primary) !important;
+    border-left: 6px solid var(--bh-primary) !important;
 }
 
 .bh-left-bar-secondary {
-    border-left: 6px solid var(--bs-secondary) !important;
+    border-left: 6px solid var(--bh-secondary) !important;
+}
+
+.bh-left-bar-warning {
+    border-left: 6px solid var(--bs-warning) !important;
+}
+
+.bh-left-bar-success {
+    border-left: 6px solid var(--bs-success) !important;
+}
+
+.bh-left-bar-danger {
+    border-left: 6px solid var(--bs-danger) !important;
 }
 
 .disabled {
