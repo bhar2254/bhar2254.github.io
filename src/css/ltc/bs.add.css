@@ -5,11 +5,11 @@
     --bh-secondary: #FFA400;
     --bh-secondary-filter: invert(56%) sepia(98%) saturate(911%) hue-rotate(359deg) brightness(103%) contrast(106%);
     --bh-dark-grey: #212529;
-    --bh-dark-grey-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(100%) contrast(100%) sepia(0%);
+    --bh-dark-grey-filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(0deg) brightness(27%) contrast(83%);
     --bh-light-grey: #f1f1f1;
     --bh-light-grey-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
     --bh-dark-gray: #212529;
-    --bh-dark-gray-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) hue-rotate(0deg) saturate(0%) brightness(100%) contrast(100%) sepia(0%);
+    --bh-dark-gray-filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(0deg) brightness(27%) contrast(83%);
     --bh-light-gray: #f1f1f1;
     --bh-light-gray-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
     --bh-sand: #FDF5E6;
@@ -167,6 +167,14 @@ textarea {
 
 .bh-left-bar {
     border-left: 6px solid #ccc !important;
+}
+
+.bh-left-bar-primary {
+    border-left: 6px solid var(--bs-primary) !important;
+}
+
+.bh-left-bar-secondary {
+    border-left: 6px solid var(--bs-secondary) !important;
 }
 
 .disabled {
