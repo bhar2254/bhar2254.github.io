@@ -369,6 +369,10 @@ td:hover {
     width: 10rem;
 }
 
+.parallax-canvas {
+	background-color:#fff!important;
+}
+
 #topButton {
   border-radius: 50% !important;
   display: none;
