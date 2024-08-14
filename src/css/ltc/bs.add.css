@@ -180,6 +180,24 @@ textarea {
 	/* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
+.bg-glass-primary {
+	/* From https://css.glass */
+	background: rgba(var(--var(--bh-primary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary {
+	/* From https://css.glass */
+	background: rgba(var(--var(--bh-secondary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
 .bh-table-link {
     cursor: pointer;
 }
