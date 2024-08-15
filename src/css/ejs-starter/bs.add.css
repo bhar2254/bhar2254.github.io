@@ -26,7 +26,7 @@
     --bs-primary-rgb: var(--bh-primary-rgb);
     --bs-secondary-rgb: var(--bh-secondary-rgb);
     --bs-emphasis-color-rgb: var(--bh-secondary-rgb);
-    --bs-link-color-rgb: var(--bh-primary-rgb);
+    --bs-link-color-rgb: var(--bh-secondary-rgb);
 }
 
 .breadcrumb {	
