@@ -4,27 +4,25 @@
     --bh-primary-filter: invert(22%) sepia(16%) saturate(3004%) hue-rotate(300deg) brightness(91%) contrast(88%);
     --bh-secondary: #FFA400;
     --bh-secondary-filter: invert(56%) sepia(98%) saturate(911%) hue-rotate(359deg) brightness(103%) contrast(106%);
-    --bh-dark-grey: #776E64;
-    --bh-dark-grey-filter: invert(44%) sepia(2%) saturate(2281%) hue-rotate(351deg) brightness(97%) contrast(88%);
+    --bh-dark-grey: #212529;
+    --bh-dark-grey-filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(0deg) brightness(27%) contrast(83%);
     --bh-light-grey: #f1f1f1;
     --bh-light-grey-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
-    --bh-dark-gray: #776E64;
-    --bh-dark-gray-filter: invert(44%) sepia(2%) saturate(2281%) hue-rotate(351deg) brightness(97%) contrast(88%);
+    --bh-dark-gray: #212529;
+    --bh-dark-gray-filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(0deg) brightness(27%) contrast(83%);
     --bh-light-gray: #f1f1f1;
     --bh-light-gray-filter: invert(99%) sepia(1%) saturate(522%) hue-rotate(227deg) brightness(118%) contrast(89%);
     --bh-sand: #FDF5E6;
     --bh-primary-rgb: 120,47,64;
     --bh-secondary-rgb: 255,164,0;
-    --bh-dark-grey-rgb: 119,110,100;
+    --bh-dark-grey-rgb: 33,37,41;
     --bh-light-grey-rgb: 241,241,241;
-    --bh-dark-gray-rgb: 119,110,100;
+    --bh-dark-gray-rgb: 33,37,41;
     --bh-light-gray-rgb: 241,241,241;
     --bh-sand-rgb: 253,254,230;
     --bs-primary-rgb: var(--bh-primary-rgb);
     --bs-secondary-rgb: var(--bh-secondary-rgb);
     --bs-emphasis-color-rgb: var(--bs-secondary-rgb);
-    --bs-body-bg: var(--bh-light-gray);
-    --bs-modal-bg: var(--bh-light-gray);
 }
 
 body {
@@ -32,6 +30,21 @@ body {
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, rgb(var(--bh-sand-rgb)), rgb(var(--bh-primary-rgb)));
     font-family: 'Gotham Narrow', sans-serif;
+}
+
+.space-background body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/* Full height */
+	height: 100%;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	background-image: url('https://apod.nasa.gov/apod/image/2408/AuroraPerseids_Anders_1080.jpg');
 }
 
 hr {
@@ -90,7 +103,6 @@ textarea {
 
 .dropdown-item {
     font-weight: 325;
-    color: #444 !important;
 }
 
 .dropdown-item:hover {
@@ -159,6 +171,33 @@ textarea {
     resize: none;
 }
 
+.bg-glass {
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary {
+	/* From https://css.glass */
+	background: rgba(var(--bh-primary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary {
+	/* From https://css.glass */
+	background: rgba(var(--bh-secondary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
 .bh-table-link {
     cursor: pointer;
 }
@@ -170,6 +209,26 @@ textarea {
 
 .bh-left-bar {
     border-left: 6px solid #ccc !important;
+}
+
+.bh-left-bar-primary {
+    border-left: 6px solid var(--bh-primary) !important;
+}
+
+.bh-left-bar-secondary {
+    border-left: 6px solid var(--bh-secondary) !important;
+}
+
+.bh-left-bar-warning {
+    border-left: 6px solid var(--bs-warning) !important;
+}
+
+.bh-left-bar-success {
+    border-left: 6px solid var(--bs-success) !important;
+}
+
+.bh-left-bar-danger {
+    border-left: 6px solid var(--bs-danger) !important;
 }
 
 .disabled {
@@ -344,12 +403,35 @@ td:hover {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
 }
+
 .img-25 {
     width: 25rem;
 }
+
 .img-15 {
     width: 15rem;
 }
+
 .img-10 {
     width: 10rem;
+}
+
+.parallax-canvas {
+	background-color:#878787!important;
+}
+
+#topButton {
+  border-radius: 50% !important;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--bh-primary);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
 }
