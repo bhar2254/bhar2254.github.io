@@ -59,11 +59,6 @@ hr {
     color: var(--bh-line);
 }
 
-.table {
-    --bs-table-color: #000;
-    --bs-table-hover-color: #000;
-}
-
 .navbar {
     --bs-navbar-color: rgba(var(--bh-light-grey-rgb), 0.65);
     --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
@@ -374,23 +369,6 @@ textarea {
 .disabled {
     opacity: .6;
     pointer-events: none;
-}
-
-.dataTables_wrapper .dataTables_filter input,
-.dataTables_length select {
-    background-color: #fff !important;
-}
-
-.dt-button {
-    background-color: #fff !important;
-}
-
-.dataTables_length {
-    margin: .75rem;
-}
-
-.dataTables_paginate {
-    margin: .25rem;
 }
 
 .current {
