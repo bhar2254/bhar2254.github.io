@@ -56,27 +56,6 @@ hr {
     --bs-table-hover-color: #000;
 }
 
-input,
-select,
-textarea {
-    color: #533;
-}
-
-.form-control input,
-.form-control select,
-.form-control textarea {
-    color: #333;
-    background-color: #fff;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-}
-
-.form-control {
-    color: #333 !important;
-    border-radius: .375rem;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
 .navbar {
     --bs-navbar-color: rgba(var(--bh-light-grey-rgb), 0.65);
     --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
