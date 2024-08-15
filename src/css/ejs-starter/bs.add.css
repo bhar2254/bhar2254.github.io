@@ -160,7 +160,6 @@ textarea {
 }
 
 .bg-glass {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.16);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -169,7 +168,6 @@ textarea {
 }
 
 .bg-glass-1 {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.1);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -178,7 +176,6 @@ textarea {
 }
 
 .bg-glass-3 {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.3);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -187,7 +184,6 @@ textarea {
 }
 
 .bg-glass-5 {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.5);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -196,7 +192,6 @@ textarea {
 }
 
 .bg-glass-7 {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -205,7 +200,6 @@ textarea {
 }
 
 .bg-glass-9 {
-	/* From https://css.glass */
 	background: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -214,7 +208,6 @@ textarea {
 }
 
 .bg-glass-primary {
-	/* From https://css.glass */
 	background: rgba(var(--bh-primary-rgb), 0.16);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -222,9 +215,88 @@ textarea {
 	/* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
+.bg-glass-primary-1 {
+	background: rgba(var(--bh-primary-rgb), 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-3 {
+	background: rgba(var(--bh-primary-rgb), 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-5 {
+	background: rgba(var(--bh-primary-rgb), 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-7 {
+	background: rgba(var(--bh-primary-rgb), 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-9 {
+	background: rgba(var(--bh-primary-rgb), 0.9);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
 .bg-glass-secondary {
-	/* From https://css.glass */
 	background: rgba(var(--bh-secondary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-1 {
+	background: rgba(var(--bh-secondary-rgb), 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-3 {
+	background: rgba(var(--bh-secondary-rgb), 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-5 {
+	background: rgba(var(--bh-secondary-rgb), 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-7 {
+	background: rgba(var(--bh-secondary-rgb), 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-9 {
+	background: rgba(var(--bh-secondary-rgb), 0.9);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
