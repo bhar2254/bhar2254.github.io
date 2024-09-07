@@ -59,38 +59,6 @@ hr {
     color: var(--bh-line);
 }
 
-.navbar {
-    --bs-navbar-color: rgba(var(--bh-light-grey-rgb), 0.65);
-    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
-    --bs-navbar-disabled-color: rgba(var(--bh-light-grey-rgb), 0.3);
-    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-    --bs-navbar-brand-color: rgba(var(--bh-light-grey-rgb), 1);
-    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-    --bs-navbar-toggler-border-color: rgba(var(--bh-light-grey-rgb), 0.15);
-    --bs-navbar-brand-padding-y: 0;
-}
-
-.modal {
-    --bs-modal-bg: var(--bs-body-bg);
-}
-
-.modal-content {
-    color: var(--bh-line);
-}
-
-.dropdown-menu {
-    --bs-dropdown-link-active-bg: #fff;
-    box-shadow: var(--bs-box-shadow-lg) !important;
-}
-
-.dropdown-item {
-    font-weight: 325;
-}
-
-.dropdown-item:hover {
-    color: var(--bh-secondary) !important;
-}
-
 .btn-close-primary {
     filter: var(--bh-primary-filter);
     top: 1rem;
