@@ -4,6 +4,8 @@
     --bh-primary-filter: invert(22%) sepia(16%) saturate(3004%) hue-rotate(300deg) brightness(91%) contrast(88%);
     --bh-secondary: #FFA400;
     --bh-secondary-filter: invert(56%) sepia(98%) saturate(911%) hue-rotate(359deg) brightness(103%) contrast(106%);
+    --bh-tertiary: #FFA400;
+    --bh-tertiary-filter: invert(56%) sepia(98%) saturate(911%) hue-rotate(359deg) brightness(103%) contrast(106%);
     --bh-dark-grey: #212529;
     --bh-dark-grey-filter: invert(87%) sepia(3%) saturate(0%) hue-rotate(0deg) brightness(27%) contrast(83%);
     --bh-light-grey: #f1f1f1;
@@ -15,6 +17,7 @@
     --bh-sand: #FDF5E6;
     --bh-primary-rgb: 120,47,64;
     --bh-secondary-rgb: 255,164,0;
+    --bh-tertiary-rgb: 255,164,0;
     --bh-dark-grey-rgb: 33,37,41;
     --bh-light-grey-rgb: 241,241,241;
     --bh-dark-gray-rgb: 33,37,41;
@@ -22,7 +25,12 @@
     --bh-sand-rgb: 253,254,230;
     --bs-primary-rgb: var(--bh-primary-rgb);
     --bs-secondary-rgb: var(--bh-secondary-rgb);
-    --bs-emphasis-color-rgb: var(--bs-secondary-rgb);
+    --bs-emphasis-color-rgb: var(--bh-secondary-rgb);
+    --bs-link-color-rgb: var(--bh-secondary-rgb);
+}
+
+.breadcrumb {	
+    --bs-breadcrumb-item-active-color: var(--bh-secondary);
 }
 
 body {
@@ -44,69 +52,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-	background-image: url('https://apod.nasa.gov/apod/image/2408/AuroraPerseids_Anders_1080.jpg');
+	background-image: url('/images/ihcc/ihcc_lake.jpg');
 }
 
 hr {
     color: var(--bh-line);
-}
-
-.table {
-    --bs-table-color: #000;
-    --bs-table-hover-color: #000;
-}
-
-input,
-select,
-textarea {
-    color: #533;
-}
-
-.form-control input,
-.form-control select,
-.form-control textarea {
-    color: #333;
-    background-color: #fff;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-}
-
-.form-control {
-    color: #333 !important;
-    border-radius: .375rem;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.navbar {
-    --bs-navbar-color: rgba(var(--bh-light-grey-rgb), 0.65);
-    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
-    --bs-navbar-disabled-color: rgba(var(--bh-light-grey-rgb), 0.3);
-    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
-    --bs-navbar-brand-color: rgba(var(--bh-light-grey-rgb), 1);
-    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
-    --bs-navbar-toggler-border-color: rgba(var(--bh-light-grey-rgb), 0.15);
-    --bs-navbar-brand-padding-y: 0;
-}
-
-.modal {
-    --bs-modal-bg: var(--bs-body-bg);
-}
-
-.modal-content {
-    color: var(--bh-line);
-}
-
-.dropdown-menu {
-    --bs-dropdown-link-active-bg: #fff;
-    box-shadow: var(--bs-box-shadow-lg) !important;
-}
-
-.dropdown-item {
-    font-weight: 325;
-}
-
-.dropdown-item:hover {
-    color: var(--bh-secondary) !important;
 }
 
 .btn-close-primary {
@@ -155,25 +105,101 @@ textarea {
     overflow-x: auto;
 }
 
-input,
-select,
 textarea {
-    background-color: #fff !important;
-}
-
-input:read-only,
-select:disabled,
-textarea:read-only {
-    background-color: khaki !important;
-}
-
-textarea {
+	
     resize: none;
 }
 
 .bg-glass {
-	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.16);
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-1 {
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-3 {
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-5 {
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-7 {
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-9 {
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark {
+	background: rgba(var(--bh-dark-grey), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark-1 {
+	background: rgba(var(--bh-dark-grey), 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark-3 {
+	background: rgba(var(--bh-dark-grey), 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark-5 {
+	background: rgba(var(--bh-dark-grey), 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark-7 {
+	background: rgba(var(--bh-dark-grey), 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-dark-9 {
+	background: rgba(var(--bh-dark-grey), 0.9);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
@@ -181,7 +207,6 @@ textarea {
 }
 
 .bg-glass-primary {
-	/* From https://css.glass */
 	background: rgba(var(--bh-primary-rgb), 0.16);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -189,9 +214,88 @@ textarea {
 	/* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
+.bg-glass-primary-1 {
+	background: rgba(var(--bh-primary-rgb), 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-3 {
+	background: rgba(var(--bh-primary-rgb), 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-5 {
+	background: rgba(var(--bh-primary-rgb), 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-7 {
+	background: rgba(var(--bh-primary-rgb), 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-primary-9 {
+	background: rgba(var(--bh-primary-rgb), 0.9);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
 .bg-glass-secondary {
-	/* From https://css.glass */
 	background: rgba(var(--bh-secondary-rgb), 0.16);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-1 {
+	background: rgba(var(--bh-secondary-rgb), 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-3 {
+	background: rgba(var(--bh-secondary-rgb), 0.3);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-5 {
+	background: rgba(var(--bh-secondary-rgb), 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-7 {
+	background: rgba(var(--bh-secondary-rgb), 0.7);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.bg-glass-secondary-9 {
+	background: rgba(var(--bh-secondary-rgb), 0.9);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
@@ -234,23 +338,6 @@ textarea {
 .disabled {
     opacity: .6;
     pointer-events: none;
-}
-
-.dataTables_wrapper .dataTables_filter input,
-.dataTables_length select {
-    background-color: #fff !important;
-}
-
-.dt-button {
-    background-color: #fff !important;
-}
-
-.dataTables_length {
-    margin: .75rem;
-}
-
-.dataTables_paginate {
-    margin: .25rem;
 }
 
 .current {
