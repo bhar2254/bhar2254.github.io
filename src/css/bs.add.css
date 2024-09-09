@@ -511,8 +511,8 @@ td:hover {
   border-radius: 50% !important;
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 1rem;
+  right: 25vw;
   z-index: 99;
   font-size: 18px;
   border: none;
