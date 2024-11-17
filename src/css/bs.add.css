@@ -306,6 +306,11 @@ textarea {
     cursor: pointer;
 }
 
+.table a {
+    display:block;
+    text-decoration:none;
+}
+
 .bh-center {
     margin-left: auto;
     margin-right: auto;
