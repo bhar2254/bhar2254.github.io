@@ -311,6 +311,10 @@ textarea {
     text-decoration:none;
 }
 
+.table-responsive {
+	max-height: 75vh!important;
+}
+
 .bh-center {
     margin-left: auto;
     margin-right: auto;
