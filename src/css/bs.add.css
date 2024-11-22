@@ -223,101 +223,115 @@ textarea {
   background: rgba(0, 0, 0, 0.9); /* Almost opaque */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6); /* Intense shadow */
 }
-
+/* Base class for primary glass */
 .bg-glass-primary {
-	background: rgba(var(--bh-primary-rgb), 0.16);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Level 1: Light tint */
 .bg-glass-primary-1 {
-	background: rgba(var(--bh-primary-rgb), 0.1);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-primary-rgb), 0.1);  /* Convert HEX to RGB for dynamic use */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
+/* Level 3: Medium transparency */
 .bg-glass-primary-3 {
-	background: rgba(var(--bh-primary-rgb), 0.3);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-primary-rgb), 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Level 5: Balanced glass */
 .bg-glass-primary-5 {
-	background: rgba(var(--bh-primary-rgb), 0.5);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-primary-rgb), 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Level 7: Darker primary glass */
 .bg-glass-primary-7 {
-	background: rgba(var(--bh-primary-rgb), 0.7);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-primary-rgb), 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Level 9: Nearly opaque */
 .bg-glass-primary-9 {
-	background: rgba(var(--bh-primary-rgb), 0.9);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-primary-rgb), 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 }
 
+/* Base class for secondary glass */
 .bg-glass-secondary {
-	background: rgba(var(--bh-secondary-rgb), 0.16);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Level 1: Light tint */
 .bg-glass-secondary-1 {
-	background: rgba(var(--bh-secondary-rgb), 0.1);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-secondary-rgb), 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
+/* Level 3: Medium transparency */
 .bg-glass-secondary-3 {
-	background: rgba(var(--bh-secondary-rgb), 0.3);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-secondary-rgb), 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Level 5: Balanced glass */
 .bg-glass-secondary-5 {
-	background: rgba(var(--bh-secondary-rgb), 0.5);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-secondary-rgb), 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* Level 7: Darker secondary glass */
 .bg-glass-secondary-7 {
-	background: rgba(var(--bh-secondary-rgb), 0.7);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-secondary-rgb), 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Level 9: Nearly opaque */
 .bg-glass-secondary-9 {
-	background: rgba(var(--bh-secondary-rgb), 0.9);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  background: rgba(var(--bh-secondary-rgb), 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Base class for tertiary glass */
+.bg-glass-tertiary {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Level 1: Light tint */
+.bg-glass-tertiary-1 {
+  background: rgba(var(--bh-tertiary-rgb), 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Level 3: Medium transparency */
+.bg-glass-tertiary-3 {
+  background: rgba(var(--bh-tertiary-rgb), 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Level 5: Balanced glass */
+.bg-glass-tertiary-5 {
+  background: rgba(var(--bh-tertiary-rgb), 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Level 7: Darker tertiary glass */
+.bg-glass-tertiary-7 {
+  background: rgba(var(--bh-tertiary-rgb), 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Level 9: Nearly opaque */
+.bg-glass-tertiary-9 {
+  background: rgba(var(--bh-tertiary-rgb), 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 }
 
 .bh-table-link {
