@@ -1,6 +1,5 @@
 /* Thumbnail Styling */
 .popup-img {
-  width: 150px;  /* Adjust size as needed */
   cursor: pointer;
   transition: transform 0.3s;
   margin: 10px;  /* Add some spacing between images */
