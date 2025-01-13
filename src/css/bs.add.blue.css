@@ -1,0 +1,13 @@
+/*	bs.add.dev.css
+	Additional custom CSS to use along-side BS5's css kit
+
+	Used for the dev environment
+	
+	11.16.23 Blaine Harper, Programmer, IHCC
+*/
+:root {
+  --bh-primary: #001E38;
+  --bh-primary-rgb: 0,30,56;
+  --bh-secondary: #F7C564;
+  --bh-secondary-rgb: 247,197,100;
+}
