@@ -1,10 +1,18 @@
-#primary_canvas, #drawing_canvas {
+#playableBoard_wrapper{
+    position: relative;
+}
+
+#primary_canvas, #drawing_canvas, #playableBoard {
     position: absolute; 
     top: 0px; 
     left: 0px;
 }
 
-#primary_canvas, #drawing_canvas {
+#playableBoard {
+    z-index: -1;
+}
+
+#primary_canvas, #drawing_canvas, #playableBoard {
     opacity: 0.8;
     padding: 2px;
 }
