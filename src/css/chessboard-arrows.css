@@ -1,0 +1,10 @@
+#primary_canvas, #drawing_canvas {
+    position: absolute; 
+    top: 0px; 
+    left: 0px;
+}
+
+#primary_canvas, #drawing_canvas {
+    opacity: 0.8;
+    padding: 2px;
+}
