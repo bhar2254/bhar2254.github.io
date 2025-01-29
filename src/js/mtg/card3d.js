@@ -1,14 +1,21 @@
 class Card3D {
   constructor(element) {
     this.element = element;
-    this.inner = element.querySelector(".card3d-inner");
+    this.image = element.querySelector("img");
     this.init();
   }
 
   init() {
     this.element.style.perspective = "1000px";
-    this.inner.style.transformStyle = "preserve-3d";
-    this.inner.style.transition = "transform 0.2s ease-out";
+    this.image.style.transition = "transform 0.2s ease-out";
+    this.image.style.transformOrigin = "center";
+    this.element.style.overflow = "hidden";
+    this.element.style.display = "flex";
+    this.element.style.alignItems = "center";
+    this.element.style.justifyContent = "center";
+    this.image.style.width = "100%";
+    this.image.style.height = "100%";
+    this.image.style.objectFit = "cover";
     this.element.addEventListener("mousemove", this.handleMouseMove.bind(this));
     this.element.addEventListener("mouseleave", this.handleMouseLeave.bind(this));
   }
@@ -18,11 +25,11 @@ class Card3D {
     const x = (event.clientX - left - width / 2) / width * 2;
     const y = (event.clientY - top - height / 2) / height * -2;
     
-    this.inner.style.transform = `rotateY(${x * 15}deg) rotateX(${y * 15}deg)`;
+    this.image.style.transform = `scale(1.1) rotateY(${x * 15}deg) rotateX(${y * 15}deg)`;
   }
 
   handleMouseLeave() {
-    this.inner.style.transform = "rotateY(0) rotateX(0)";
+    this.image.style.transform = "scale(1) rotateY(0) rotateX(0)";
   }
 }
 
