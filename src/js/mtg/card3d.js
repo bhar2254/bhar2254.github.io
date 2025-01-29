@@ -1,33 +1,30 @@
-function map(val, minA, maxA, minB, maxB) {
-  return minB + ((val - minA) * (maxB - minB)) / (maxA - minA);
-}
+class Card3D {
+  constructor(element) {
+    this.element = element;
+    this.image = element.querySelector("img");
+    this.init();
+  }
 
-function Card3D(card, ev) {
-  let img = card.querySelector('img');
-  let imgRect = card.getBoundingClientRect();
-  let width = imgRect.width;
-  let height = imgRect.height;
-  let mouseX = ev.offsetX;
-  let mouseY = ev.offsetY;
-  let rotateY = map(mouseX, 0, 180, -25, 25);
-  let rotateX = map(mouseY, 0, 250, 25, -25);
-  let brightness = map(mouseY, 0, 250, 1.5, 0.5);
-  
-  img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-  img.style.filter = `brightness(${brightness})`;
-}
+  init() {
+    this.element.style.perspective = "1000px";
+    this.image.style.transition = "transform 0.2s ease-out";
+    this.image.style.transformOrigin = "center";
+    this.element.addEventListener("mousemove", this.handleMouseMove.bind(this));
+    this.element.addEventListener("mouseleave", this.handleMouseLeave.bind(this));
+  }
 
-var cards = document.querySelectorAll('.card3d');
-
-cards.forEach((card) => {
-  card.addEventListener('mousemove', (ev) => {
-    Card3D(card, ev);
-  });
-  
-  card.addEventListener('mouseleave', (ev) => {
-    let img = card.querySelector('img');
+  handleMouseMove(event) {
+    const { width, height, left, top } = this.element.getBoundingClientRect();
+    const x = (event.clientX - left) / width - 0.5;
+    const y = (event.clientY - top) / height - 0.5;
     
-    img.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    img.style.filter = 'brightness(1)';
-  });
-});
+    this.image.style.transform = `scale(1.2) rotateY(${x * 20}deg) rotateX(${y * -20}deg)`;
+  }
+
+  handleMouseLeave() {
+    this.image.style.transform = "scale(1) rotateY(0) rotateX(0)";
+  }
+}
+
+// Apply to all elements with class "card3d"
+document.querySelectorAll(".card3d").forEach(card => new Card3D(card));
