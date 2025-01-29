@@ -1,15 +1,23 @@
 .card3d {
   display: inline-block;
-  width: 300px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
+  width: 300px;
+  height: 200px;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.card3d-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
 }
 
 .card3d img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
   transition: transform 0.2s ease-out;
 }
