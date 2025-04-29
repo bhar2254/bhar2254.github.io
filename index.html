@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Landing page for bhar2254's personal GitHub projects and sites."/>
   <title>bhar2254 | Blaine Harper</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"><!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  
   <style>
     :root {
       --viridis-0: #440154;
@@ -54,6 +57,10 @@
       gap: 1rem;
     }
 
+    .img-fluid {
+      max-width: 85%; /* or 10rem if you want slightly larger */
+    }
+    
     .links a {
       background-color: rgba(255,255,255,0.1);
       padding: 1rem 2rem;
@@ -96,22 +103,40 @@
     <p class="tagline">Engineer · Creator · Explorer</p>
   </header>
 
-  <section class="links">
+  <div class="row links">
     <a href="https://blaineharper.com" target="_blank">🔗 blaineharper.com</a>
     <a href="https://danealue.com" target="_blank">🔗 danealue.com</a>
     <a href="https://d256.us" target="_blank">🔗 d256.us</a>
     <a href="https://github.com/bhar2254" target="_blank">🐙 GitHub Profile</a>
-  </section>
+  </div>
 
-  <section class="repo-cards">
-    <a href="https://github.com/bhar2254/Mikecraft"><img src="https://opengraph.githubassets.com/1/bhar2254/Mikecraft" alt="mikecraft Project"></a>
-    <a href="https://github.com/bhar2254/Cloudflare-Workers-Starter"><img src="https://opengraph.githubassets.com/1/bhar2254/Cloudflare-Workers-Starter" alt="cloudflare-workers Project"></a>
-    <a href="https://github.com/golang-hello-world"><img src="https://opengraph.githubassets.com/1/bhar2254/golang-hello-world" alt="golang hello Project"></a>
-    <a href="https://github.com/express-api-generator"><img src="https://opengraph.githubassets.com/1/bhar2254/express-api-generator" alt="express-api Project"></a>
-  </section>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6">
+      <a href="https://github.com/bhar2254/Mikecraft">
+        <img class="img-fluid" src="https://opengraph.githubassets.com/1/bhar2254/Mikecraft" alt="mikecraft Project">
+      </a>
+    </div>  
+    <div class="col-12 col-sm-6">
+      <a href="https://github.com/bhar2254/Cloudflare-Workers-Starter">
+        <img class="img-fluid" src="https://opengraph.githubassets.com/1/bhar2254/Cloudflare-Workers-Starter" alt="cloudflare-workers Project">
+      </a>
+    </div>  
+    <div class="col-12 col-sm-6">    
+      <a href="https://github.com/golang-hello-world">
+        <img class="img-fluid" src="https://opengraph.githubassets.com/1/bhar2254/golang-hello-world" alt="golang hello Project">
+      </a>
+    </div>  
+    <div class="col-12 col-sm-6">
+      <a href="https://github.com/express-api-generator">
+        <img class="img-fluid" src="https://opengraph.githubassets.com/1/bhar2254/express-api-generator" alt="express-api Project">
+      </a>
+    </div>  
+  </div>
+
 
   <footer>
     &copy; 2025 bhar2254 · Built with ❤️ and viridis
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
