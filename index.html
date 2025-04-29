@@ -1,8 +1,115 @@
-<html>
-  <head>
-    <title>Hello World</title>
-  </head>
-  <body>
-    Hello World!
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Landing page for bhar2254's personal GitHub projects and sites."/>
+  <title>bhar2254 | Blaine Harper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --viridis-0: #440154;
+      --viridis-1: #3b528b;
+      --viridis-2: #21908d;
+      --viridis-3: #5ec962;
+      --viridis-4: #fde725;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, var(--viridis-0), var(--viridis-3));
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      margin-top: 3rem;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      border: 3px solid var(--viridis-4);
+    }
+
+    h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: 2rem;
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      color: var(--viridis-4);
+    }
+
+    .links {
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .links a {
+      background-color: rgba(255,255,255,0.1);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: var(--viridis-2);
+    }
+
+    .repo-cards {
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+    }
+
+    .repo-card img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid white;
+    }
+
+    footer {
+      margin: 2rem 0 1rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/17699245?v=4" alt="Profile Avatar">
+    <h1>@bhar2254</h1>
+    <p class="tagline">Engineer · Creator · Explorer</p>
+  </header>
+
+  <section class="links">
+    <a href="https://blaineharper.com" target="_blank">🔗 blaineharper.com</a>
+    <a href="https://danealue.com" target="_blank">🔗 danealue.com</a>
+    <a href="https://d256.us" target="_blank">🔗 d256.us</a>
+    <a href="https://github.com/bhar2254" target="_blank">🐙 GitHub Profile</a>
+  </section>
+
+  <section class="repo-cards">
+    <img src="https://opengraph.githubassets.com/1/bhar2254/bhar2254.github.io" alt="GitHub Pages Repo">
+    <img src="https://opengraph.githubassets.com/1/bhar2254/d256" alt="d256 Project">
+  </section>
+
+  <footer>
+    &copy; 2025 bhar2254 · Built with ❤️ and viridis
+  </footer>
+</body>
 </html>
