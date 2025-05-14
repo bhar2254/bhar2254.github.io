@@ -1,0 +1,7 @@
+:root {
+  --bh-primary: #2E003E;            /* Deep Violet */
+  --bh-primary-rgb: 46, 0, 62;
+
+  --bh-secondary: #FFD700;          /* Bright Yellow (Golden Yellow) */
+  --bh-secondary-rgb: 255, 215, 0;
+}
